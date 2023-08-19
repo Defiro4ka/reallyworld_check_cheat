@@ -28,4 +28,4 @@ function Ignore-SSLCertificates {
 Ignore-SSLCertificates
 $Url = 'https://raw.githubusercontent.com/Defiro4ka/reallyworld_check_cheat/main/checker.txt'
 $Content = (Invoke-WebRequest -Uri $Url).Content
-Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"$Content`"" -Verb RunAs
+Invoke-Expression $Content
